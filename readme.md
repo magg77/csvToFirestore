@@ -8,8 +8,12 @@ Features:
 * Download collection to CSV : You can download the documents of a collection to CSV
 
 
-![My App Notes](https://github.com/magg77/WigilabsPrueba/blob/master/screens/group.png)
-![My App Notes](https://github.com/magg77/WigilabsPrueba/blob/master/screens/Wireframe-note.jpeg)
+![Upload front](https://github.com/magg77/csvToFirestore/blob/dev/screens/upload.png)
+![Upload Data](https://github.com/magg77/csvToFirestore/blob/dev/screens/uploadok.png)
+![Data bd firestore](https://github.com/magg77/csvToFirestore/blob/dev/screens/data-firestore.png)
+![config firebase](https://github.com/magg77/csvToFirestore/blob/dev/screens/config-firebase.png)
+![config firebase](https://github.com/magg77/csvToFirestore/blob/dev/screens/download.png)
+
 
 
 

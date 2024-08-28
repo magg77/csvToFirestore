@@ -4,7 +4,7 @@ import { db } from "./firebaseConfig";
 
 console.log('Hola, Webpack!');
 
-let currentId = 1000; // ID inicial
+let currentId = 1001; // ID inicial
 
 // Manejar el evento de carga del archivo
 document.getElementById('uploadButton').addEventListener('click', async () => {
@@ -69,7 +69,7 @@ function processCsvData(data) {
         return {
             nombre: row['nombre'],
             unidad: row['unidad'],
-            precio: parseFloat(row['precio']),
+            precio: parseFloat(row['precio']),  
             ...(tienePromocion && { promociones }) // Solo incluir promociones si existen
         };
     });

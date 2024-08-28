@@ -1,17 +1,48 @@
-# Prueba Técnica
+# Firestores BD
 
-Desarrollo prueba Técnica Android WIGILABS
+Upload csv file to firestore with javascript
 
 Features:
 
-* Vista Movie: muestra un listado de peliculas consultado un servicio en internet.
-* Vista Favorite: Muestra un listado de peliculas favoritas selecionadas por el usuario.
-* Vista Detalle: Muestra el detalle de una pelicula seleccionada, tanto favorita como una pelicula de interes del usuario.
+* Upload CSV : You can upload documents to a firestore collection in bulk
+* Download collection to CSV : You can download the documents of a collection to CSV
 
-* Tambien puedes ver peliculas guardadas en tu bases de datos local, mientras te conectas a internet.
-* Agregar peliculas a favoritas para guardar en la bases de datos local, funciona sin conexión a internet.
 
 ![My App Notes](https://github.com/magg77/WigilabsPrueba/blob/master/screens/group.png)
 ![My App Notes](https://github.com/magg77/WigilabsPrueba/blob/master/screens/Wireframe-note.jpeg)
 
 
+
+# firebaseConfig.js
+
+- create file ./src/firebaseConfig.js inside the src directory
+- add the configuration that firebase-admin console generates, when you generate a new project
+
+````
+```
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app"
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app)
+
+
+export {db}
+
+```
+````
